@@ -115,6 +115,18 @@ top: 20px;
       margin: 0 auto;
       padding-top: 100px;
     }
+    .modal-comm__submit{
+      display: inline-block;
+      left:50%;
+    }
+    .modal-comm__submit-img{
+      position: absolute;
+      display: inline-block;
+      right: -120px;
+      top:50%;
+      transform: translate(0,-50%) !important;
+      z-index: 5;
+    }
   }
   @media(max-width:321px){
     .container{

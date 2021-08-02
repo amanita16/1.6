@@ -560,7 +560,17 @@ ul {
     .modal-comm .modal-comm-wrapper {
       padding-bottom: 70px;
       margin: 0 auto;
-      padding-top: 100px; } }
+      padding-top: 100px; }
+    .modal-comm .modal-comm__submit {
+      display: inline-block;
+      left: 50%; }
+    .modal-comm .modal-comm__submit-img {
+      position: absolute;
+      display: inline-block;
+      right: -120px;
+      top: 50%;
+      transform: translate(0, -50%) !important;
+      z-index: 5; } }
   @media (max-width: 321px) {
     .modal-comm .container {
       padding: 0 10px; } }
@@ -648,7 +658,7 @@ ul {
     display: block; }
   .modal-phones .modal-phones__submit-img {
     position: absolute;
-    right: 35px;
+    right: 25px;
     top: 50%;
     transform: translate(-25%, -50%);
     z-index: 5; }
@@ -673,7 +683,17 @@ ul {
     .modal-phones .modal-phones-wrapper {
       padding-bottom: 70px;
       margin: 0 auto;
-      padding-top: 100px; } }
+      padding-top: 100px; }
+    .modal-phones .modal-phones__submit {
+      display: inline-block;
+      left: 50%; }
+    .modal-phones .modal-phones__submit-img {
+      position: absolute;
+      display: inline-block;
+      right: -120px;
+      top: 50%;
+      transform: translate(0, -50%) !important;
+      z-index: 5; } }
   @media (max-width: 321px) {
     .modal-phones .container {
       padding: 0 10px; } }
