@@ -1,0 +1,168 @@
+
+.modal-phones{
+  display: flex;
+  background-color:$bgModal;
+ position: absolute;
+ max-width: 100%;
+ bottom:100%;
+ transform: translate(0,100%);
+ z-index: 21;
+ min-height: 3000px;
+// bottom: 110%;
+
+.modal-phones-wrapper{
+
+   padding-top: 20px;
+  
+  // max-width: 350px;
+}
+  .container{
+max-width: 350px;
+margin: 0 auto;
+display: inline-block;
+padding: 0 15px;
+  }
+  .modal{
+    display: block;
+    width:288px;
+    height: 48px;
+    border:1px solid #EAEAEA;
+    border-radius:8px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  // .modal-comm__close {
+  //   margin-bottom: 30px;
+  // }
+  .modal-phones__close{
+    // position: absolute;
+    // right: 43%;
+    margin-left: -140px;
+    display: inline-block;
+  }
+  .modal-message{
+    position: relative;
+  }
+  .message{
+    width:288px;
+      height: 118px;
+      border:1px solid #EAEAEA;
+      border-radius:8px;
+      margin-bottom: 15px;
+      padding-left: 15px;
+      padding-top: 15px;
+      display: block;
+  }
+  .modal-phones__title p{
+    font-size: 24px;
+    color:$textModalTitle;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .modal-phones__text{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .modal-phones__text span{
+    color:#FF3E79;
+  
+  }
+  .modal-phones__submit{
+    position: relative;
+    min-height: 32px;
+  }
+  .modal-phones__item{
+    width: 136px;
+    height: 32px;
+    background: #FF3E79;
+    border-radius:16px;
+    border:solid transparent;
+    color:$bgModal;
+    text-transform:uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    cursor: pointer;
+  left: 50%;
+  padding-right: 20px;
+  display: block;
+  }
+  .modal-phones__submit-img{
+    position: absolute;
+    right: 15%;
+    top:50%;
+    transform: translate(-25%,-50%);
+    z-index: 5;
+  }
+  .modal-empty{
+    min-height: 700px;
+    width: 1200px;
+    background-color:white;
+    background:linear-gradient(to left,#eae7f0 1%,#fafafa 2%,white 4%);
+
+  }
+.modal-phones__close-link{
+  display: block;
+}
+  @media(max-width: 475px){
+    .modal-phones__empty{
+      display: none;
+    }
+     .modal-phones__close {
+       position: absolute;
+      
+     display: block;
+     margin: 0;
+top: 20px;
+  }
+    .container{
+      max-width:475px;
+      margin: 0 auto;
+    
+    }
+    .modal-phones-wrapper{
+      padding-bottom: 70px;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+  }
+  @media(max-width:321px){
+    .container{
+      padding: 0 10px;
+    }
+  }
+ 
+}
+
+// @media(min-width: 1184px){
+//   .modal-phones{
+//     min-height: 976px;
+//   }
+
+  
+//     }
+//     @media(max-width: 1183px){
+//       .modal-phones{
+//         //  margin-top: -525px;
+    
+//         min-height: 976px;
+//       }
+//     }
+//     @media(max-width: 1119px){
+//       .modal-phones{
+//         // margin-top: -560px;
+    
+//         min-height: 976px;
+//       }
+//     }
+//     @media(max-width: 767px){
+//       .modal-phones{
+//         // margin-top: -780px;
+    
+//         min-height: 976px;
+//       }
+//     }
+    .modal-phones{
+      display: none;
+    }
+    

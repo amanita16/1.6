@@ -1,0 +1,139 @@
+.repair{
+position: relative;
+max-width:1180px;
+min-height: 300px;
+left: 320px;
+  background-color:#F8F8F8;
+  padding-bottom: 55px;
+ .swiper-container{
+   display: none;
+ }
+  .container{
+    max-width:1120px;
+    margin: 0 auto;
+  }
+  .repair-title{
+    margin-bottom: 20px;
+  }
+  .repair-title p{
+    margin-left: 20px;
+  }
+  // .title{
+  //   width: 1180px;
+  // }
+  .repair__item{
+    cursor: pointer;
+  }
+  .repair-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .repair__item{
+    height: 160px;
+width: 240px;
+background-color:$bgModal;
+border-radius: 6px;
+padding-top: 15px;
+padding-left: 10px;
+position: relative;
+margin-bottom: 20px;
+  }
+  .repair__item::after{
+    content: ' ';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    left: 77%;
+    bottom: 20px;
+  
+    background-image: url('/./src/img/brends/dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    // display: block;
+  }
+  .repair__item p {
+    font-size: 16px;
+  }
+  .repair__visible{
+    position: relative;
+    margin-left: 15px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  @media(max-width:856px){
+    .repair__item{
+      height: 160px;
+  width: 224px;
+  
+  border-radius: 6px;
+  
+    }
+  }
+  @media(max-width:719px){
+    .repair-wrapper{
+      justify-content: space-around !important;
+    }
+  }
+  @media(max-width:420px){
+    .repair-container{
+      display: none;
+    }
+    .swiper-container{
+      display: block !important;
+      padding: 0 25px;
+      position: absolute;
+      top: 70px;
+      height: 200px;
+    max-width: 360px;
+    
+    }
+    .swiper-slide{
+      flex-shrink: 0; 
+    
+    }
+    .swiper-pagination{
+      min-width: 100px;
+      max-height: 20px;
+      position: absolute;
+      top: 190px;
+     left: 50%; 
+     transform: translateX(-50%);
+    }
+    }
+  
+}
+@media(max-width:1120px){
+  .repair{
+    left: 0;
+   .container{
+     padding: 0 15px;
+      // padding: 0;
+       max-width:1100px;
+      //  padding-left: 15px;
+       margin: 0 auto;
+      }
+      .repair-wrapper{
+        margin: 0 auto;
+        max-width:950px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+  }
+  .repair__item-four{
+    display: none;
+  }
+}
+.repair__item-hidden{
+  display: none;
+}
+@media (max-width: 475px){
+.repair-title p {
+    width: 250px;
+    margin: 0;
+}
+}

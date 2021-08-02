@@ -1,0 +1,35 @@
+
+// @font-face {
+//   font-family: 'TT Lakes';
+//   src: url('../fonts/comic.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+html{
+  font-size: 16px;
+  box-sizing: border-box;
+  //  overflow-x: scroll; 
+
+  background-color:#F8F8F8;
+
+  }
+  *,*::after,*::before{
+    box-sizing: inherit;
+  }
+  body{
+    // overflow-x: scroll;
+    
+    font-family: 'TT Lakes',sans-serif;
+    height: 100%;
+  
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  
+  
+  }
+  ul{
+    list-style: none;
+  }
