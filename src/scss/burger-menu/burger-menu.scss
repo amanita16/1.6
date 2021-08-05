@@ -70,19 +70,26 @@ min-height: 2000px;
   display: flex;
   flex-direction: column;
 justify-content: space-between;
+margin-left: -25px;
 }
   .nav__btn{
   border: none;
     font-size: 16px;
     font-weight: 500;
-    transition: 1s;
     color:#1B1C21;
     background-color: inherit;
     cursor: pointer;
+    border-left: 5px solid transparent;
+    padding-left: 25px;
+    min-height: 30px;
   }
   .active-btn{
-    color:  #7E7E82
+    color:  #7E7E82;
+    min-height: 30px;
+    border-left: 5px solid #41F6D7;
+
   }
+
   .footer-burger{
     min-height: 183px;
     display: flex;

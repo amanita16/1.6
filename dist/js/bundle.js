@@ -214,7 +214,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "menu", function() { return menu; });
 var active = document.querySelectorAll(".services__btn");
 active.forEach(function (item) {
-  item.classList.remove('active');
   item.addEventListener("click", function () {
     var activeBtn = item;
     active.forEach(function (item) {
@@ -246,6 +245,53 @@ function burgerMenu() {
 }
 
 burgerMenu();
+
+function textHidden() {
+  var textDesc = document.querySelector('.services__discription-hidden');
+  var textHidd = document.querySelector('.discription-text__hidden');
+  var textHiddImg = document.querySelector('.services__visible-img');
+  textHidd.style.display = "none";
+  textDesc.addEventListener('click', function () {
+    // textHidd.style.display = 'block'
+    if (textHidd.style.display === "none") {
+      textHidd.style.display = 'block';
+      textDesc.innerHTML = "Cкрыть";
+      textHiddImg.style.transform = "rotate(180deg)";
+    } else {
+      textHidd.style.display = "none";
+      textDesc.innerHTML = "Читать далее";
+      textHiddImg.style.transform = "rotate(0deg)";
+    }
+  });
+}
+
+textHidden();
+
+function tab() {
+  var tabItem = document.querySelectorAll('.services__item');
+  var tabContent = document.querySelectorAll('.tab');
+  var tabName;
+  tabItem.forEach(function (item) {
+    item.addEventListener('click', selectTabNav);
+  });
+
+  function selectTabNav() {
+    tabItem.forEach(function (item) {
+      item.classList.remove('is-active');
+    });
+    this.classList.add('.is-active');
+    tabName = this.getAttribute('data-tab');
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent() {
+    tabContent.forEach(function (item) {
+      item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+    });
+  }
+}
+
+tab();
 
 /***/ }),
 

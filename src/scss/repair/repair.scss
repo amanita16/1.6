@@ -8,6 +8,9 @@ left: 320px;
  .swiper-container{
    display: none;
  }
+ .repair__item:nth-child(4){
+   display: flex;
+ }
   .container{
     max-width:1120px;
     margin: 0 auto;
@@ -18,9 +21,7 @@ left: 320px;
   .repair-title p{
     margin-left: 20px;
   }
-  // .title{
-  //   width: 1180px;
-  // }
+
   .repair__item{
     cursor: pointer;
   }
@@ -54,6 +55,9 @@ margin-bottom: 20px;
     background-position: center;
     cursor: pointer;
     // display: block;
+  }
+  .repair__item:nth-child(4){
+    display: flex;
   }
   .repair__item p {
     font-size: 16px;
@@ -124,8 +128,8 @@ margin-bottom: 20px;
         flex-wrap: wrap;
       }
   }
-  .repair__item-four{
-    display: none;
+  .repair__item:nth-child(4){
+    display: none !important;
   }
 }
 .repair__item-hidden{

@@ -13,7 +13,7 @@
 
    padding-top: 20px;
   
-  // max-width: 350px;
+ 
 }
   .container{
     max-width: 350px;
@@ -30,12 +30,7 @@
     margin-bottom: 15px;
     padding-left: 15px;
   }
-  // .modal-comm__close {
-  //   margin-bottom: 30px;
-  // }
   .modal-comm__close{
-    // position: absolute;
-    // right: 43%;
     margin-left: -140px;
     display: inline-block;
   }
@@ -77,7 +72,7 @@
   }
   .modal-comm__submit-img{
     position: absolute;
-    right: 25px;
+    right: 27px;
     top:50%;
     transform: translate(0,-50%);
   }

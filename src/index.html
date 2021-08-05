@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
+  <div class="wrapper">
   <section class="modal-phones">
     <div class="modal-phones__empty modal-empty"></div>
     <div class="modal-phones-wrapper">
@@ -115,7 +116,7 @@
         </div>
         </div>
         </div>
-        </div>
+        <!-- </div> -->
       </header>
       <section class="services">
         <div class="container">
@@ -125,32 +126,32 @@
             </h1>
             <nav class="services__nav">
               <ul class="services__list">
-                <li class="services__item">
-                  <button class="services__btn active">
+                <li class="services__item" data-tab= 'tab-1' >
+                  <button class="services__btn active is-active">
                     Ремонтируемые бренды
                   </button>
                 </li>
-                <li class="services__item">
+                <li class="services__item" data-tab= 'tab-2'>
                   <button class="services__btn">
                     Ремонтируемые устройства
                   </button>
                 </li>
-                <li class="services__item">
+                <li class="services__item" data-tab= 'tab-3'>
                   <button class="services__btn">
                     Цены на услуги
                   </button>
                 </li>
-                <li class="services__item">
+                <li class="services__item" data-tab= 'tab-4'>
                   <button href="" class="services__btn">
                     Адреса сервисных центров
                   </button>
                 </li>
-                <li class="services__item">
+                <li class="services__item" data-tab= 'tab-5'>
                   <button href="" class="services__btn">
                     Специальные цены
                   </button>
                 </li>
-                <li class="services__item">
+                <li class="services__item" data-tab= 'tab-6'>
                   <button href="" class="services__btn">
                     Отзывы
                   </button>
@@ -158,20 +159,61 @@
               </ul>
             </nav>
             <div class="services__discription">
-              <div class="services__discription-text">
+              <div class="services__discription-text tab tab-1 is-active">
                <p> Мы являемся авторизованным сервисным центром по
                 ремонту техники Dell. Только у нас вы можете 
                 отремонтировать свой ноутбук Dell с
                 официальной гарантией производителя.</p>
                 <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать 
-                  свой ноутбук Dell с официальной гарантией производителя.
-                 </p>
                  <p> Мы успешно работаем с 1992 года и заслужили
                   репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
                   и, в свою очередь, советуют нас родным и близким.</p>
+                  <span class="discription-text__hidden">Lorem ipsum dolor, sit amet
+                     consectetur adipisicing elit. Ratione, sint dicta eius ipsum accusantium obcaecati, repudiandae perspiciatis dignissimos architecto inventore veritatis 
+                    laborum magni accusamus unde? Beatae voluptatum distinctio quod perferendis?</span>
+                    <img src="img/brends/arrow.svg" alt="" class="services__visible-img" />
                  <div class="services__discription-hidden">Читать далее</div>
               </div>
+
+              <div class="services__discription-text tab tab-2">
+               <p> Мы являемся авторизованным сервисным центром по
+                ремонту техники Dell. Только у нас вы можете 
+                отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.</p>
+                <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, facere? Doloribus corporis ad at rerum esse. Ipsam veritatis explicabo
+                 nostrum fugiat deserunt! Nam nobis voluptatibus alias magnam, voluptatem officiis velit.
+              </div>
+              <div class="services__discription-text tab tab-3">
+               <p> Мы являемся авторизованным сервисным центром по
+                ремонту техники Dell. Только у нас вы можете 
+                отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.</p>
+                <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                 gghh
+              </div>
+              <div class="services__discription-text tab tab-4">
+               <p> Мы являемся авторизованным сервисным центром по
+                ремонту техники Dell. Только у нас вы можете 
+                отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.</p>
+                <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                 33455
+              </div>
+              <div class="services__discription-text tab tab-5">
+               <p> Мы являемся авторизованным сервисным центром по
+                ремонту техники Dell. Только у нас вы можете 
+                отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.</p>
+                <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                 ec5
+              </div>
+              <div class="services__discription-text tab tab-6">
+               <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur id iure labore obcaecati blanditiis error quod ad laborum maxime harum
+                 , vel nihil rerum, mollitia repellendus! Numquam qui reiciendis reprehenderit.</span>
+              </div>
+
+
               <div class="services__discription-img">
                 <img src="img/main/main-icon.png" alt="">
               </div>
@@ -251,6 +293,12 @@
                 </a>
               </div> 
   
+              <div class="brends__item hidden">
+                <a href="" class="brends__link"
+                  ><img src="img/brends/acer.png" alt="" class="brends__image" />
+                </a>
+              </div> 
+
               <div class="brends__item hidden">
                 <a href="" class="brends__link"
                   ><img src="img/brends/acer.png" alt="" class="brends__image" />
@@ -337,8 +385,20 @@
          <p>Ремонт  ноутбуков</p>
         </div>  
 
-        <div class="repair__item repair__item-four">
+        <div class="repair__item repair__item-hidden">
          <p>Ремонт  ноутбуков</p>
+        </div>  
+        <div class="repair__item repair__item-hidden">
+         <p>Ремонт  мониторов</p>
+        </div>  
+        <div class="repair__item repair__item-hidden">
+         <p>Ремонт  мониторов</p>
+        </div>  
+        <div class="repair__item repair__item-hidden">
+         <p>Ремонт  мониторов</p>
+        </div>  
+        <div class="repair__item repair__item-hidden">
+         <p>Ремонт  мониторов</p>
         </div>  
         <div class="repair__item repair__item-hidden">
          <p>Ремонт  мониторов</p>
@@ -722,7 +782,7 @@
        </div>
     </div>
   <div class="footer-burger__mail">
-    <a href="" class="footer-burger__mail-link">
+    <a href="mailto:mail@cps.com" class="footer-burger__mail-link">
       mail@cps.com
     </a>
   </div>
@@ -740,8 +800,8 @@
         </div>
         <div class="empty"></div>
       </aside> 
-     
-     
+    
+    </div>
       
      
        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
