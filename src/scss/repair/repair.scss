@@ -50,14 +50,14 @@ margin-bottom: 20px;
     left: 77%;
     bottom: 20px;
   
-    background-image: url(./img/brends/dropdown.svg);
+    background-image: url('/./dist/img/brends/dropdown.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-
+    // display: block;
   }
   .repair__item:nth-child(4){
-    display: flex;
+    display: flex !important;
   }
   .repair__item p {
     font-size: 16px;
