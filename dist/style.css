@@ -776,11 +776,12 @@ ul {
   border: 1px solid red;
   border-radius: 50%;
   left: 75%;
-  background-image: url(/../../img/brends/dropdown.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   display: block; }
+
+.brends__image-arrows {
+  position: absolute;
+  right: 30px; }
 
 .title {
   min-height: 56px;
@@ -810,6 +811,10 @@ ul {
 .four {
   align-self: flex-start !important;
   display: none; }
+
+.swiper-slide .brends__image-arrows {
+  right: 123px;
+  top: 51.5px; }
 
 @media (min-width: 1120px) {
   .four {
