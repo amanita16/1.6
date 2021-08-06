@@ -985,6 +985,8 @@ ul {
       top: 70px;
       height: 200px;
       max-width: 360px; }
+    .repair .repair__item-img {
+      right: 28px; }
     .repair .swiper-slide {
       flex-shrink: 0; }
     .repair .swiper-pagination {
