@@ -50,11 +50,16 @@ margin-bottom: 20px;
     left: 77%;
     bottom: 20px;
   
-    background-image: url('/./dist/img/brends/dropdown.svg');
+    // background-image: url('/./dist/img/brends/dropdown.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     // display: block;
+  }
+  .repair__item-img{
+    position: absolute;
+    right: 30px;
+    bottom:34px;
   }
   .repair__item:nth-child(4){
     display: flex !important;
@@ -70,6 +75,9 @@ margin-bottom: 20px;
     cursor: pointer;
   }
   @media(max-width:856px){
+    .repair__item-img{
+      right: 27px;
+    }
     .repair__item{
       height: 160px;
   width: 224px;
